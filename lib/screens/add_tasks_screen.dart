@@ -7,7 +7,7 @@ class AddTasksScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    String? newTaskTitle;
+    String newTaskTitle = '';
     return Container(
       color: const Color(0xff757575),
       child: Container(
@@ -42,7 +42,7 @@ class AddTasksScreen extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {
-                Provider.of<TaskData>(context, listen: false).addTask(newTaskTitle!);
+                Provider.of<TaskData>(context, listen: false).addTask(newTaskTitle);
                 Navigator.pop(context);
               },
               child: const Text('ADD'),

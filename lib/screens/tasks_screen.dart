@@ -46,7 +46,7 @@ class _TasksScreenState extends State<TasksScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                CircleAvatar(
+                const CircleAvatar(
                   backgroundColor: Colors.white,
                   radius: 35.0,
                   child: Icon(
@@ -54,10 +54,10 @@ class _TasksScreenState extends State<TasksScreen> {
                     size: 35,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 15,
                 ),
-                Text(
+                const Text(
                   'Todo List',
                   style: TextStyle(
                     fontWeight: FontWeight.w700,
@@ -67,13 +67,13 @@ class _TasksScreenState extends State<TasksScreen> {
                 ),
                 Text(
                   '${Provider.of<TaskData>(context).tasks!.length} Tasks',
-                  style: TextStyle(
+                  style: const TextStyle(
                     color: Colors.white,
                     fontSize: 15,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
               ],
